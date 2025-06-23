@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>TESTING!</title>
+  <meta charset="UTF-8">
+  <title>Nuvo</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-size: 3rem;
+    }
+    .typewriter {
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+    }
   </style>
 </head>
 <body>
-First Test
+  <div class="typewriter" id="typewriter"></div>
+  <img src="https://www.harveynorman.co.uk/cdn/shop/files/WH1000XM4S.CE7_11.jpg?v=1742818857" style="width:100px;height:100px; >
+  <button> type="button">Shop the latest </button>
+  
+  <script>
+    const text = "Nuvo";
+    const speed = 500;
+    let i = 0;
+
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typewriter").textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    typeWriter();
+  </script>
 </body>
 </html>
