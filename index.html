@@ -1,59 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>All Ads - Rotating</title>
+  <title>TESTING!</title>
   <style>
-    body {
-      margin: 0;
-      background: #000;
-      color: #fff;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 10px;
-      padding: 10px;
-    }
-    .ad {
-      background: #111;
-      border: 2px solid #333;
-      padding: 10px;
-      height: 250px;
-    }
   </style>
 </head>
 <body>
-
-<!-- Create static ad containers -->
-<script>
-  const adCount = 50;
-  const adScriptSrc = '//pl26604536.profitableratecpm.com/4b/79/ff/4b79ffdbceb22ba0a35d20968b07cca9.js';
-
-  const adElements = [];
-
-  for (let i = 0; i < adCount; i++) {
-    const container = document.createElement('div');
-    container.className = 'ad';
-    document.body.appendChild(container);
-    adElements.push(container);
-  }
-
-  function loadAd(container) {
-    container.innerHTML = '';
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = adScriptSrc + '?rnd=' + Math.random(); // Avoid caching
-    container.appendChild(script);
-  }
-
-  // Initial ad load
-  adElements.forEach(loadAd);
-
-  // Refresh random ads every few seconds
-  setInterval(() => {
-    const randomIndex = Math.floor(Math.random() * adElements.length);
-    loadAd(adElements[randomIndex]);
-  }, 3000); // Every 3 seconds, one random ad refreshes
-</script>
-
+First Test
 </body>
 </html>
