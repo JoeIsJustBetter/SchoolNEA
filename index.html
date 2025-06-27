@@ -9,23 +9,53 @@
       background: #111;
       color: white;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       font-size: 3rem;
+      gap: 20px;
     }
+
     .typewriter {
       border-right: 2px solid white;
       white-space: nowrap;
       overflow: hidden;
     }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: white;
+      color: #111;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #ccc;
+    }
   </style>
 </head>
 <body>
+
   <div class="typewriter" id="typewriter"></div>
-  <img src="https://www.harveynorman.co.uk/cdn/shop/files/WH1000XM4S.CE7_11.jpg?v=1742818857" style="width:100px;height:100px; >
-  <button> type="button">Shop the latest </button>
   
+    <style>
+  body {
+    background-image: url('https://i.ibb.co/gL506FmC/NUVOpods-2.png');
+    background-repeat: no-repeat;
+  }
+
+  
+  <button type="button">Shop the Latest</button>
+  </style>
   <script>
     const text = "Nuvo";
     const speed = 500;
@@ -41,5 +71,6 @@
 
     typeWriter();
   </script>
+
 </body>
 </html>
