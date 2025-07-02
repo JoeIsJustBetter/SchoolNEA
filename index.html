@@ -40,9 +40,18 @@
       font-family: 'Playfair Display', serif;
       font-size: 5rem;
       color: white;
-      border-right: 2px solid white;
       white-space: nowrap;
       overflow: hidden;
+    }
+
+    #cursor {
+      display: inline-block;
+      font-weight: bold;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
     }
 
     button {
@@ -66,7 +75,9 @@
 
   <div class="image-container">
     <img src="https://i.ibb.co/gL506FmC/NUVOpods-2.png" alt="Nuvo Pods">
-    <div class="typewriter" id="typewriter"></div>
+    <div class="typewriter">
+      <span id="typewriter"></span><span id="cursor">|</span>
+    </div>
   </div>
 
   <button type="button">Elevate Your Sound</button>
