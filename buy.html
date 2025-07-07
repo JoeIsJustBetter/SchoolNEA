@@ -61,24 +61,27 @@
       height: 100vh;
       padding-top: 100px; /* space for fixed nav */
     }
-
+    
     .product-grid {
       display: flex;
-      gap: 40px;
+      gap: 60px; /* More space between cards */
       flex-wrap: wrap;
       justify-content: center;
       align-items: flex-start;
+      padding: 20px;
     }
+
 
     .product-card {
       background-color: white;
       border-radius: 16px;
-      align-items: center;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       padding: 30px;
-      width: 320px;
+      width: 320px; /* ✅ FIXED WIDTH */
       text-align: center;
+      box-sizing: border-box;
     }
+
 
     .product-card img {
       width: 100%;
