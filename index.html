@@ -5,8 +5,45 @@
   <title>Nuvo</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
   <style>
+    .navbar {
+    width: 100%;
+    background-color: #BFB8AD;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Playfair Display', serif;
+  }
+  body {
+    padding-top: 100px; /* Add space below the fixed navbar */
+  }
+
+  .nav-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #998888;
+  }
+
+  .nav-links a {
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #998888;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #A29393;
+  }
+
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Playfair Display', serif;
       background: #EADEDA;
       color: #998888;
       display: flex;
@@ -72,6 +109,15 @@
   </style>
 </head>
 <body>
+  <div class="navbar">
+    <div class="nav-logo">Nuvo</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Purchase</a>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
 
   <div class="image-container">
     <img src="https://i.ibb.co/gL506FmC/NUVOpods-2.png" alt="Nuvo Pods">
