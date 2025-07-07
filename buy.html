@@ -14,39 +14,44 @@
     }
 
     /* Nav Bar Styles */
-    .navbar {
-      width: 100%;
-      background-color: #BFB8AD;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-logo {
-      font-size: 2rem;
-      font-weight: bold;
-      font-family: 'Playfair Display', serif;
-      color: #998888;
-    }
-
-    .nav-links a {
-      margin-left: 30px;
-      text-decoration: none;
-      font-size: 1.1rem;
-      color: #998888;
-      transition: color 0.3s ease;
-    }
-
-    .nav-links a:hover {
-      color: #A29393;
-    }
+  .navbar {
+    width: 100%;
+    background-color: #BFB8AD;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    color: #998888;
+    margin-bottom: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #998888;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #A29393;
+  }
 
     /* Main Product Card Styles */
     .main-content {
