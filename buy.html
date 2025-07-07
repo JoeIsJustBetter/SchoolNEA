@@ -11,10 +11,50 @@
       color: #998888;
       margin: 0;
       padding: 0;
+    }
+
+    /* Nav Bar Styles */
+    .navbar {
+      width: 100%;
+      background-color: #BFB8AD;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-logo {
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: 'Playfair Display', serif;
+      color: #998888;
+    }
+
+    .nav-links a {
+      margin-left: 30px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #998888;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #A29393;
+    }
+
+    /* Main Product Card Styles */
+    .main-content {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      padding-top: 100px; /* space for fixed nav */
     }
 
     .product-card {
@@ -64,11 +104,25 @@
 </head>
 <body>
 
-  <div class="product-card">
-    <img src="https://i.ibb.co/SwJY1g1g/1-min-5-1.png" alt="Nuvo Pods Grey">
-    <div class="product-title">Nuvo Pods – Grey</div>
-    <div class="product-stock">Only 1 left in stock!</div>
-    <button class="buy-button">Purchase Now</button>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="nav-logo">Nuvo</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="buy.html">Purchase</a>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Main Product Section -->
+  <div class="main-content">
+    <div class="product-card">
+      <img src="https://i.ibb.co/SwJY1g1g/1-min-5-1.png" alt="Nuvo Pods Grey">
+      <div class="product-title">Nuvo Pods – Grey</div>
+      <div class="product-stock">Only 1 left in stock!</div>
+      <button class="buy-button">Purchase Now</button>
+    </div>
   </div>
 
 </body>
