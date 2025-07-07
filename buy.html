@@ -7,60 +7,69 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: #EADEDA;
+      background-color: #EADEDA;
       color: #998888;
+      margin: 0;
+      padding: 0;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
-      gap: 20px;
     }
 
-    .image-container {
-      position: relative;
-      width: 280px;
-      height: 396px;
+    .product-card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 320px;
+      text-align: center;
     }
 
-    .image-container img {
+    .product-card img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      border-radius: 8px;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
 
-
-    button {
-      padding: 10px 200px;
+    .product-title {
       font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      background-color: #EADEDA;
-      color: #BFB8AD;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #998888;
     }
 
-    button:hover {
-      background-color: #EADEDA;
-      padding: 10px 200px;
+    .product-stock {
+      font-size: 1rem;
+      color: #A29393;
+      margin-bottom: 20px;
+    }
+
+    .buy-button {
+      background-color: #BFB8AD;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: 'Playfair Display', serif;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-button:hover {
+      background-color: #A29393;
     }
   </style>
 </head>
 <body>
 
-  <div class="image-container">
-    <area>
-      <img src="https://i.ibb.co/SwJY1g1g/1-min-5-1.png" alt="Nuvo Pods Grey">
-    </area>
+  <div class="product-card">
+    <img src="https://i.ibb.co/SwJY1g1g/1-min-5-1.png" alt="Nuvo Pods Grey">
+    <div class="product-title">Nuvo Pods – Grey</div>
+    <div class="product-stock">Only 1 left in stock!</div>
+    <button class="buy-button">Purchase Now</button>
   </div>
-    <button type="button">Only 1 left in stock!</button>
-    <button type="button">Purchase</button>
-  <script>
-  </script>
 
 </body>
 </html>
